@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="sicks300_alternative" type="sick300_driver_alternative" name="front_laser_node" output="screen">
+        <param name="frame" value="front_laser"/>
+        <param name="devicename" value="/dev/ttyUSB0"/>
+    </node>
+    <node pkg="sicks300_alternative" type="sick300_driver_alternative" name="rear_laser_node" output="screen">
+        <param name="frame" value="rear_laser"/>
+        <param name="devicename" value="/dev/ttyUSB1"/>
+    </node>
+</launch>
+
